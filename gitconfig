@@ -1,0 +1,26 @@
+[color]
+        ui = auto
+[user]
+        name = Mark Zhang
+        email = ace119@163.com
+[core]
+        editor = vim
+        abbrev = 12
+        autocrlf = false
+        filemode = false
+        deltaBaseCacheLimit = 1G
+        pager = less -X -F
+[diff]
+        tool = vimdiff
+        renames = true
+[difftool]
+        prompt = No
+[alias]
+        s = status
+        cp = cherry-pick
+        ck = checkout
+        b = branch
+        dt = difftool
+	lo = log --pretty=format:\"%Cgreen%ad%Creset %Cred%h%Creset %C(Yellow)%an%Creset: %s\" --date=short
+[http]
+	cookiefile = /home/markz/.gitcookies
