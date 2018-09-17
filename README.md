@@ -1,2 +1,2 @@
-# jared
+# Jared
 Personal configurations and scripts.
