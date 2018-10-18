@@ -1,0 +1,3 @@
+[Watch file changes and restart Rocket]
+- cargo install watchexec
+- watchexec --exts tera,css,js,html --restart "cargo run --bin web"
