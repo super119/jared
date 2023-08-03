@@ -1,7 +1,8 @@
 #!/bin/bash
 wget "https://raw.githubusercontent.com/fivesheep/chnroutes/master/chnroutes.py"
 chmod 755 chnroutes.py
-./chnroutes.py -p mac
+# chnroutes.py has stopped updating since 2018 since it needs python2
+python2 ./chnroutes.py -p mac
 echo "/ip firewall address-list" > ros-domestic-ips.rsc
 grep "route add" ip-up >> ros-domestic-ips.rsc
 sed -i -e "s/route add /add address=/g" -e 's/"${OLDGW}"/disabled=no list=domestic/g' ros-domestic-ips.rsc
